@@ -1,8 +1,17 @@
 {
-  "name": "starlight-content-guard",
+  "name": "@wyatt/starlight-content-guard",
   "version": "0.1.0",
   "description": "Starlight plugin and CLI for comprehensive content validation at scale",
-  "license": "Apache-2.0",
+  "author": "WyattAu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WyattAu/starlight-content-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WyattAu/starlight-content-guard/issues"
+  },
+  "homepage": "https://github.com/WyattAu/starlight-content-guard#readme",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
