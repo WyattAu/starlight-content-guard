@@ -28,13 +28,17 @@ import starlightContentGuard from '@wyatt/starlight-content-guard';
 export default defineConfig({
   integrations: [
     starlight({
-      plugins: [starlightContentGuard()],
+      title: 'My Docs',
     }),
+    starlightContentGuard(),
   ],
 });
 ```
 
 Validation runs at `astro:build:start` and fails the build if any errors are found.
+
+> `starlightContentGuard()` is an Astro integration, so it belongs in the top-level
+> `integrations` array — not inside `starlight({ plugins: [...] })`.
 
 ## Usage — CLI
 
