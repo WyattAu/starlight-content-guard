@@ -2,7 +2,7 @@
 
 Starlight plugin and CLI for comprehensive content validation at scale.
 
-`@wyatt/starlight-content-guard` validates your Starlight documentation content — frontmatter, descriptions, links (internal and external), MDX syntax, math blocks, and images — either as part of `astro build` via the Astro integration API, or standalone via the `content-guard` CLI in CI.
+`@wyatt/starlight-content-guard` validates your Starlight documentation content; frontmatter, descriptions, links (internal and external), MDX syntax, math blocks, and images; either as part of `astro build` via the Astro integration API, or standalone via the `content-guard` CLI in CI.
 
 ## Features
 
@@ -17,7 +17,7 @@ Starlight plugin and CLI for comprehensive content validation at scale.
 npm install @wyatt/starlight-content-guard
 ```
 
-## Usage — Astro integration
+## Usage: Astro integration
 
 ```js
 // astro.config.mjs
@@ -38,9 +38,9 @@ export default defineConfig({
 Validation runs at `astro:build:start` and fails the build if any errors are found.
 
 > `starlightContentGuard()` is an Astro integration, so it belongs in the top-level
-> `integrations` array — not inside `starlight({ plugins: [...] })`.
+> `integrations` array; not inside `starlight({ plugins: [...] })`.
 
-## Usage — CLI
+## Usage: CLI
 
 ```bash
 npx content-guard check                # validate the whole site
